@@ -1,3 +1,4 @@
+import Subcription from './service/subscriptionService.js'
 
 (function () {
     const mobilePath = "/assets/images/illustration-sign-up-mobile.svg"
@@ -9,11 +10,4 @@
     } else {
         imageCon.src = desktopPath
     }
-
-
-
-
-
-
-
 }())
