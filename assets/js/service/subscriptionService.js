@@ -1,11 +1,16 @@
-let SUBCRIBER_API = 'v1/api/subscribe/';
-let UNSUBCRIBER_API = 'v1/api/unsubscribe/';
+let SUBCRIBER_API = 'http://localhost:5000/api/v1/subscribe';
+let UNSUBCRIBER_API = 'api/v1/unsubscribe/';
 
-export default class Subcription {
+class Subcription {
 
-    subcribe(email) {
-        SUBCRIBER_API + email;
-        return axios.get(SUBCRIBER_API)
+    subcribe(subscription) {
+        return fetch('http://localhost:5000/api/v1/subscribe', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(subscription)
+        });
     }
 
     unSubcribe(email) {
@@ -14,3 +19,4 @@ export default class Subcription {
     }
 }
 
+export default new Subcription()
