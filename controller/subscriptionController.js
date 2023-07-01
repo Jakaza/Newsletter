@@ -1,16 +1,22 @@
 const Subscription = require('../model/subscriptionModel')
 
 const subscribe = async (req, res) => {
-    const email = req.body.email
+    const userEmail = req.body.email
     try {
         const subscription = await Subscription.create({
-            "email": email
+            "email": userEmail
         })
-        res.json(subscription)
+        res.status(200).json({
+            message: 'success',
+            subscription
+        })
+        console.log(subscription);
     } catch (error) {
-        res.json(error)
+        res.json({
+            message: 'success',
+            error
+        })
     }
-    console.log(email);
 }
 const updateSubscription = async (req, res) => {
     const id = req.params.id
