@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sign-up form start -->
+
+    <main>
+        <div class="newsletter-container">
+            <section class="content">
+                <div class="title">
+                    <h1>Stay updated!</h1>
+                </div>
+                <div class="details">
+                    <p><b>Change preferences</b></p> <br>
+                    <p>On how many times to recieve updates</p>
+
+
+                </div>
+
+                <form action="">
+                    <div class="label">
+                        <label for="1d">Receive 1 email update per day</label>
+                        <input type="radio" value="1d" name="preference" id="1d">
+                    </div> <br>
+                    <div class="label">
+                        <label for="2d">Receive 2 emails update per day</label>
+                        <input type="radio" value="2d" name="preference" id="2d">
+                    </div> <br>
+                    <div class="label">
+                        <label for="3d">Receive 3 emails update per day</label>
+                        <input type="radio" value="3d" name="preference" id="3d">
+                    </div> <br>
+                    <div class="label">
+                        <label for="4d">Receive 4 emails update per day</label>
+                        <input type="radio" value="4d" name="preference" id="4d">
+                    </div> <br>
+                    <div class="input-control">
+                        <input type="submit" value="Update Preferences">
+                    </div>
+                </form>
+            </section>
+            <section class="image">
+                <img id="sign-up-image-con" src="" width="100%" height="100%" alt="illustration sign up" srcset="">
+            </section>
+        </div>
+
+
+        <div class="success-model" style="display: none;">
+            <div class="success-icon">
+                <img src="/images/icon-success.svg" height="100%" width="100%" alt="">
+            </div>
+            <h1>Thanks for subscribing!</h1>
+
+            <p> A confirmation email has been sent to ash@loremcompany.com.
+                Please open it and click the button inside to confirm your subscription.</p>
+
+
+            <form action="">
+                <div class="input-control">
+                    <input type="submit" value="Dismiss message">
+                </div>
+            </form>
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/main.js" type="module"></script>
+
+
+
+
+
+</body>
+
+</html>
